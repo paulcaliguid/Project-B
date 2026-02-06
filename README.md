@@ -8,9 +8,7 @@ Open `index.html` in your browser. No build step is required.
 
 ## Live site
 
-```
-https://paulcaliguid.github.io/Project-B/
-```
+[https://paulcaliguid.github.io/Project-B/](https://paulcaliguid.github.io/Project-B/)
 
 ## Features
 
