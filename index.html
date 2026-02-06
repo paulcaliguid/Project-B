@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-B | Signal Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Project-B</p>
+          <h1>Signal Tasks</h1>
+          <p class="subhead">A clean, focused space to capture, prioritize, and finish what matters.</p>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-kpi">
+            <span class="kpi-label">Focus streak</span>
+            <span class="kpi-value" id="streakValue">0 days</span>
+          </div>
+          <div class="panel-kpi">
+            <span class="kpi-label">Tasks completed</span>
+            <span class="kpi-value" id="completedValue">0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="composer">
+        <form id="taskForm" autocomplete="off">
+          <label class="sr-only" for="taskInput">Add a task</label>
+          <input id="taskInput" name="task" type="text" placeholder="Add a new task and hit Enter" maxlength="120" />
+          <button type="submit">Add task</button>
+        </form>
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="active">Active</button>
+          <button class="chip" data-filter="done">Completed</button>
+        </div>
+      </section>
+
+      <main class="board">
+        <div class="board-header">
+          <h2>Today</h2>
+          <p id="taskCount">0 tasks</p>
+        </div>
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+        <div id="emptyState" class="empty-state">
+          <p>No tasks yet. Drop your first mission above.</p>
+        </div>
+      </main>
+
+      <footer class="toolbar">
+        <button id="clearCompleted" class="ghost">Clear completed</button>
+        <button id="clearAll" class="ghost">Reset list</button>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
