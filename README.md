@@ -6,6 +6,12 @@ A bold, focused to-do list app built with vanilla HTML, CSS, and JavaScript. Tas
 
 Open `index.html` in your browser. No build step is required.
 
+## Live site
+
+```
+https://paulcaliguid.github.io/Project-B/
+```
+
 ## Features
 
 - Add, complete, and remove tasks
